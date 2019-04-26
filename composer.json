@@ -19,7 +19,7 @@
 	"wordpress-theme-library",
 	"wordpress-localizer",
 	"wordpress-php-to-js",
-	"wordpress-plugin-localizer",
+	"wordpress-plugin-localizer"
   ],
   "autoload"    : {
 	"psr-4" : {
