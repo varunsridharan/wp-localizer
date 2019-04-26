@@ -1,0 +1,37 @@
+{
+  "name"        : "varunsridharan/wp-localizer",
+  "version"     : "1.0",
+  "description" : "Simple & Usefull WP Localizer Library ",
+  "type"        : "library",
+  "support"     : {
+	"email"  : "varunsridharan23@gmail.com",
+	"issues" : "https://github.com/varunsridharan/wp-localizer/issues",
+	"wiki"   : "https://github.com/varunsridharan/wp-localizer/wiki"
+  },
+  "homepage"    : "https://github.com/varunsridharan/wp-localizer",
+  "license"     : "GPL-3.0-or-later",
+  "keywords"    : [
+	"wordpress",
+	"wordpress-theme",
+	"wordpress-plugin",
+	"wordpress-library",
+	"wordpress-plugin-library",
+	"wordpress-theme-library",
+	"wordpress-localizer",
+	"wordpress-php-to-js",
+	"wordpress-plugin-localizer",
+  ],
+  "autoload"    : {
+	"psr-4" : {
+	  "Varunsridharan\\WordPress\\" : "./src"
+	}
+  },
+  "authors"     : [
+	{
+	  "name"     : "Varun Sridharan",
+	  "email"    : "varunsridharan23@gmail.com",
+	  "homepage" : "http://varunsridharan.in",
+	  "role"     : "Developer"
+	}
+  ]
+}
