@@ -1,6 +1,5 @@
 {
   "name"        : "varunsridharan/wp-localizer",
-  "version"     : "1.0",
   "description" : "Simple & Usefull WP Localizer Library ",
   "type"        : "library",
   "support"     : {
