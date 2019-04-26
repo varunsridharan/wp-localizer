@@ -287,11 +287,21 @@ if ( ! class_exists( '\Varunsridharan\WordPress\Localizer' ) ) {
 			$script = '<script type="text/javascript" id="' . $this->slug . '_functions"> ';
 
 			$script .= '
-function ' . $this->slug . '_option ($key,$default){  $default = $default || false; if($key && "undefined" !== typeof window.' . $this->slug . '[$key] || undefined !== window.' . $this->slug . '[$key]){ return JSON.parse( JSON.stringify( window.' . $this->slug . '[$key] ) ); } return $default; }
-';
+function ' . $this->slug . '_option ($key,$default){ 
+	$default = $default || false; 
+	if($key && "undefined" !== typeof window.' . $this->slug . '[$key] || undefined !== window.' . $this->slug . '[$key]){
+		return JSON.parse( JSON.stringify( window.' . $this->slug . '[$key] ) ); 
+	}
+return $default; 
+}';
 			$script .= '
-function ' . $this->slug . '_txt($key,$default){ $default = $default || "string_not_found"; if ($key && "undefined" !== typeof window["' . $this->slug . '_il8n"][key]||  window["' . $this->slug . '_il8n"][key] !== undefined ) { return JSON.parse( JSON.stringify( window["' . $this->slug . '_il8n"][key] ) ); } return $default; }
-';
+function ' . $this->slug . '_text($key,$default){ 
+	$default = $default || "string_not_found"; 
+	if ($key && "undefined" !== typeof window["' . $this->slug . '_il8n"][$key]||  window["' . $this->slug . '_il8n"][$key] !== undefined ) { 
+		return window["' . $this->slug . '_il8n"][$key]; 
+	} 
+return $default; 
+}';
 			$script .= '</script>';
 			return $script;
 		}
