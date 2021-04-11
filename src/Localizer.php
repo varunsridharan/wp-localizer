@@ -7,10 +7,6 @@
 
 namespace Varunsridharan\WordPress;
 
-if ( ! defined( 'WPINC' ) ) {
-	die;
-}
-
 if ( ! class_exists( '\Varunsridharan\WordPress\Localizer' ) ) {
 	/**
 	 * Class Localizer
@@ -24,20 +20,16 @@ if ( ! class_exists( '\Varunsridharan\WordPress\Localizer' ) ) {
 		 * Stores All Instance.
 		 *
 		 * @var array
-		 * @access
-		 * @static
 		 */
 		protected static $instances = array();
 
 		/**
 		 * @var null
-		 * @access
 		 */
 		protected $slug = null;
 
 		/**
 		 * @var bool
-		 * @access
 		 */
 		protected $script_tocheck = false;
 
@@ -57,13 +49,11 @@ if ( ! class_exists( '\Varunsridharan\WordPress\Localizer' ) ) {
 
 		/**
 		 * @var bool
-		 * @access
 		 */
 		private $frontend = false;
 
 		/**
 		 * @var bool
-		 * @access
 		 */
 		private $functions = false;
 
@@ -94,7 +84,6 @@ if ( ! class_exists( '\Varunsridharan\WordPress\Localizer' ) ) {
 		 *
 		 * @param array|string $args
 		 *
-		 * @static
 		 * @return bool|mixed|$this|\Varunsridharan\WordPress\Localizer
 		 */
 		public static function instance( $args = array() ) {
